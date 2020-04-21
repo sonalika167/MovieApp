@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import TopsView from "@/views/TopsView";
-import MoviesView from "@/views/MoviesView";
+
 
 
 Vue.use(Router);
@@ -19,13 +19,7 @@ export default new Router({
       name: "tops",
       component: TopsView
     },
-
-    {
-      path: "/movies",
-      name: "movies",
-      component: MoviesView
-    },
-
+    
     {
       path: "/*",
       redirect: { name: "tops" }
